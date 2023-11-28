@@ -3,7 +3,7 @@ import React from "react";
 import { SafeAreaView } from "react-native-safe-area-context";
 import { useNavigation } from "@react-navigation/native";
 
-import COLORS from "../COLORS";
+import styles from "./AuthStyles";
 
 const Login = () => {
   const navigation = useNavigation();
@@ -37,46 +37,3 @@ const Login = () => {
 };
 
 export default Login;
-
-const styles = StyleSheet.create({
-  screen: {
-    height: "100%",
-    justifyContent: "center",
-    backgroundColor: COLORS.white,
-  },
-  title: {
-    textAlign: "center",
-    fontWeight: "600",
-    fontSize: 32,
-  },
-  inputBox: {
-    margin: 30,
-    gap: 30,
-  },
-  input: {
-    borderWidth: 1,
-    borderColor: COLORS.lightGrey,
-    padding: 16,
-    borderRadius: 14,
-  },
-  button: {
-    backgroundColor: COLORS.primaryColor,
-    padding: 16,
-    borderRadius: 14,
-  },
-  buttonText: {
-    color: COLORS.white,
-    textAlign: "center",
-  },
-  centerText: {
-    textAlign: "center",
-  },
-  sub: {
-    fontWeight: "400",
-    alignItems: "center",
-    flexDirection: "row",
-  },
-  link: {
-    color: COLORS.primaryColor,
-  },
-});

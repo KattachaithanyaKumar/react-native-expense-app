@@ -19,22 +19,17 @@ export default function App() {
         <Stack.Screen
           name="Onboarding"
           component={Onboarding}
-          options={{ headerShown: false, animation: "simple_push" }}
-        />
-        <Stack.Screen
-          name="Auth"
-          component={Auth}
-          options={{ headerShown: false, animation: "simple_push" }}
+          options={{ headerShown: false, animation: "fade" }}
         />
         <Stack.Screen
           name="Login"
           component={Login}
-          options={{ headerShown: false, animation: "simple_push" }}
+          options={{ headerShown: false, animation: "slide_from_bottom" }}
         />
         <Stack.Screen
           name="Signup"
           component={Signup}
-          options={{ headerShown: false, animation: "simple_push" }}
+          options={{ headerShown: false, animation: "slide_from_bottom" }}
         />
       </Stack.Navigator>
     </NavigationContainer>
