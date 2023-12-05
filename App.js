@@ -6,10 +6,10 @@ import { NavigationContainer } from "@react-navigation/native";
 const Stack = createNativeStackNavigator();
 
 //screens
-import Onboarding from "./Screens/Onboarding";
-import Auth from "./Screens/Auth";
-import Login from "./Screens/Login";
-import Signup from "./Screens/Signup";
+import Onboarding from "./Screens/auth/Onboarding";
+import Login from "./Screens/auth/Login";
+import Signup from "./Screens/auth/Signup";
+import MainLayout from "./Screens/layout/MainLayout";
 
 export default function App() {
   return (
@@ -24,12 +24,17 @@ export default function App() {
         <Stack.Screen
           name="Login"
           component={Login}
-          options={{ headerShown: false, animation: "slide_from_bottom" }}
+          options={{ headerShown: false, animation: "fade" }}
         />
         <Stack.Screen
           name="Signup"
           component={Signup}
-          options={{ headerShown: false, animation: "slide_from_bottom" }}
+          options={{ headerShown: false, animation: "fade" }}
+        />
+        <Stack.Screen
+          name="MainLayout"
+          component={MainLayout}
+          options={{ headerShown: false, animation: "fade" }}
         />
       </Stack.Navigator>
     </NavigationContainer>

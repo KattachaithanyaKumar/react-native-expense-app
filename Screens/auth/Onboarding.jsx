@@ -4,9 +4,9 @@ import { SafeAreaView } from "react-native-safe-area-context";
 import { OnboardFlow } from "react-native-onboard";
 import { useNavigation } from "@react-navigation/native";
 
-const img1 = require("../assets/Illustration1.png");
-const img2 = require("../assets/Illustration2.png");
-const img3 = require("../assets/Illustration3.png");
+const img1 = require("../../assets/Illustration1.png");
+const img2 = require("../../assets/Illustration2.png");
+const img3 = require("../../assets/Illustration3.png");
 
 const Onboarding = () => {
   const navigation = useNavigation();

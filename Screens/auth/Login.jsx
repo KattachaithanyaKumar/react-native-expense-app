@@ -3,10 +3,14 @@ import React from "react";
 import { SafeAreaView } from "react-native-safe-area-context";
 import { useNavigation } from "@react-navigation/native";
 
-import styles from "./AuthStyles";
+import styles from "../AuthStyles";
 
 const Login = () => {
   const navigation = useNavigation();
+
+  const handleLogin = () => {
+    navigation.navigate("MainLayout");
+  };
 
   return (
     <SafeAreaView style={styles.screen}>
@@ -18,7 +22,7 @@ const Login = () => {
           secureTextEntry
           style={styles.input}
         />
-        <Pressable style={styles.button}>
+        <Pressable style={styles.button} onPress={handleLogin}>
           <Text style={styles.buttonText}>Login</Text>
         </Pressable>
         <View style={styles.sub}>

@@ -1,9 +1,9 @@
 import { Pressable, StyleSheet, Text, TextInput, View } from "react-native";
 import React, { useEffect, useState } from "react";
 import { SafeAreaView } from "react-native-safe-area-context";
-import styles from "./AuthStyles";
+import styles from "../AuthStyles";
 import { useNavigation } from "@react-navigation/native";
-import COLORS from "../COLORS";
+import COLORS from "../../COLORS";
 import SmoothPinCodeInput from "react-native-smooth-pincode-input";
 
 const Signup = () => {
@@ -57,6 +57,7 @@ const Signup = () => {
             cellStyle={{
               borderColor: COLORS.lightGrey,
               borderWidth: 1,
+              borderRadius: 8,
             }}
           />
         </View>
