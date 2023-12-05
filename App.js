@@ -11,6 +11,10 @@ import Login from "./Screens/auth/Login";
 import Signup from "./Screens/auth/Signup";
 import MainLayout from "./Screens/layout/MainLayout";
 
+//sub screens
+import Income from "./Screens/subscreen/Income";
+import Expense from "./Screens/subscreen/Expense";
+
 export default function App() {
   return (
     <NavigationContainer>
@@ -34,6 +38,16 @@ export default function App() {
         <Stack.Screen
           name="MainLayout"
           component={MainLayout}
+          options={{ headerShown: false, animation: "fade" }}
+        />
+        <Stack.Screen
+          name="Income"
+          component={Income}
+          options={{ headerShown: false, animation: "fade" }}
+        />
+        <Stack.Screen
+          name="Expense"
+          component={Expense}
           options={{ headerShown: false, animation: "fade" }}
         />
       </Stack.Navigator>
